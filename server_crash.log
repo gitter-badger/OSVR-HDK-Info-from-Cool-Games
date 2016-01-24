@@ -1,0 +1,56 @@
+```bash
+[OSVR Server] Using config file 'osvr_server_config.HDK13ExtendedLandscape.sample.json'
+[OSVR Server] Constructing server as configured...
+[OSVR Server] Loading auto-loadable plugins...
+[OSVR Server] Loading plugins...
+[OSVR Server] 
+[OSVR Server] Instantiating configured drivers...
+[OSVR] Added device: org_osvr_filter_videoimufusion/HeadFusion
+[OSVR] Client context initialized for org.osvr.analysisplugin
+[OSVR] Interface initialized for /com_osvr_Multiserver/OSVRHackerDevKitPrediction0/semantic/hmd
+[OSVR] Could not resolve source for /com_osvr_Multiserver/OSVRHackerDevKitPrediction0/semantic/hmd
+[OSVR] Interface initialized for /com_osvr_VideoBasedHMDTracker/TrackedCamera0_0/semantic/hmd/front
+[OSVR] Could not resolve source for /com_osvr_VideoBasedHMDTracker/TrackedCamera0_0/semantic/hmd/front
+[OSVR Server] Successes:
+[OSVR Server]  - com_osvr_VideoBasedHMDTracker/VideoBasedHMDTracker
+[OSVR Server]  - org_osvr_filter_videoimufusion/VideoIMUFusion
+[OSVR Server] 
+[OSVR Server] 
+[OSVR Server] Aliases found and parsed from config file.
+[OSVR] ERROR: Could not load an object or display descriptor file specified by: 
+/*
+    This configuration supports video (so-called "positional") and IMU fusion tracking,
+    in addition to orientation-only tracking, with the OSVR HDK.
+    It is configured for RenderManager applications in
+    non-direct extended-display landscape mode on HDK 1.3 optics.
+    */
+"displays/OSVR_HDK_1_3.json"
+
+[OSVR Server] Using OSVR HDK for display configuration. Did not find an alternate valid 'display' object in config file.
+[OSVR] ERROR: Could not load an object or render manager config file specified by: "sample-configs/renderManager.extended.landscape.json"
+
+[OSVR Server] Triggering automatic hardware detection...
+[OSVR Server] Registering shutdown handler...
+[OSVR Server] Starting server mainloop: OSVR Server is ready to go!
+[OSVR] Performing hardware auto-detection.
+Opening camera 0
+[OSVR] Added device: com_osvr_VideoBasedHMDTracker/TrackedCamera0_0
+Video-based tracker: NOTE: Beacon calibration filename videotrackerCombinedCalibrationFile13.json was specified, but not found or could not be loaded.
+[OSVR] Path tree updated or connection detected
+[OSVR] Sending path tree to clients.
+[OSVR] Got updated path tree, processing
+[OSVR] Could not resolve source for /com_osvr_Multiserver/OSVRHackerDevKitPrediction0/semantic/hmd
+[OSVR] Constructed a TrackerHandler for com_osvr_VideoBasedHMDTracker/TrackedCamera0_0@localhost sensor 0
+[OSVR] Successfully produced handler for /com_osvr_VideoBasedHMDTracker/TrackedCamera0_0/semantic/hmd/front
+[OSVR] Connected 1 of 2 unconnected paths successfully
+[OSVR] Performing hardware auto-detection.
+[OSVR] Path tree updated or connection detected
+[OSVR] Sending path tree to clients.
+select timeout
+select timeout
+^C[OSVR Server] Received shutdown signal...
+[OSVR] Client context shut down for org.osvr.analysisplugin
+libv4l2: error dequeuing buf: Invalid argument
+VIDIOC_DQBUF: Invalid argument
+./VRsrv.sh: line 1:  4548 Segmentation fault      (core dumped) osvr_server osvr_server_config.HDK13ExtendedLandscape.sample.json
+```
