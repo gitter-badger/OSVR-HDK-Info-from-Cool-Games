@@ -1,5 +1,7 @@
 # OSVR-HDK-Info-from-Cool-Games
 
+[![Join the chat at https://gitter.im/CoolGames/OSVR-HDK-Info-from-Cool-Games](https://badges.gitter.im/CoolGames/OSVR-HDK-Info-from-Cool-Games.svg)](https://gitter.im/CoolGames/OSVR-HDK-Info-from-Cool-Games?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # OSVR HDK V1.3 - Notes on Start Up on multiple systems
 
 > Maintained at <http://www.coolgames.net/OSVR_HDK>
